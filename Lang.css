@@ -1,0 +1,751 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+
+body {
+  padding-top: 60px;
+}
+
+/* ///////////..utility classes../////////// */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #020617;
+  background: #38bdf8;
+}
+
+.btn-primary:hover {
+  background: #0ea5e9;
+}
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #020617;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+#about {
+    padding: 80px 0;
+}
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+#about {
+  background: #020617;
+}
+
+.about-text h3 {
+  color: #e5e7eb;
+}
+
+.about-text h3 {
+    line-height: 1.6;
+}
+
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #38bdf8;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #e5e7eb;
+}
+
+
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+  height: 50vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://static.vecteezy.com/system/resources/thumbnails/022/060/169/small/programming-code-abstract-technology-background-of-software-developer-and-computer-script-generative-ai-photo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.showcase-container h1,
+.showcase-container p {
+  color: #f8fafc;
+}
+
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+#contact {
+  padding: 60px 0;          
+}
+
+.contact-container {
+  max-width: 900px;        
+  margin: auto;
+  display: flex;
+  gap: 30px;                
+  align-items: center;
+}
+
+.contact-img img {
+  width: 350px;             
+  height: auto;
+  border-radius: 15px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;         
+}
+
+.form-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;            
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.form-container textarea {
+  resize: none;             
+}
+
+.form-container .btn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+
+.card {
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 600px;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 0.5s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* CARA FRONTAL */
+.card .front {
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .front {
+  background: #f1f5f9;
+  color: #020617;
+}
+
+/* IMAGEN */
+.card .front img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* CARA TRASERA */
+.card .back {
+  background: black;
+  color: whitesmoke;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.card .back {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* EFECTO FLIP */
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+#food {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#food {
+  background: #020617;
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap; /* importante */
+}
+
+.food-type {
+    width: 400px;
+}
+
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.img-content {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    text-align: right;
+}
+
+.img-content h3 {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 20px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.img-content .btn {
+    background: #00bfa6;
+    color: black;
+    padding: 8px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.img-content .btn {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.img-container:hover .btn {
+  background: #0ea5e9;
+}
+
+
+#food-menu {
+    padding: 80px 0;
+}
+
+.food-menu-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.food-menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* DOS COLUMNAS */
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.food-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.food-menu-item {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.food-menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.food-img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.food-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.food-menu-item:hover img {
+    transform: scale(1.1);
+}
+
+#pioneros-cards {
+  padding: 80px 20px;
+  background-color: #f5f7fa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 60px 0 40px;
+  color: #222;
+}
+
+.section-title {
+  color: #f8fafc;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #111;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.card-content span {
+  font-size: 0.85rem;
+  color: #0077ff;
+  font-weight: bold;
+}
+
+.card-content span {
+  color: #38bdf8;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+   background: #020617;
+  color: #94a3b8;
+}
+
+/* ===== SECCIÓN GENERAL ===== */
+#pioneros-cards {
+  padding: 80px 40px;
+  background: #0b0b0b;
+  color: white;
+}
+
+#pioneros-cards {
+  background: #0f172a;
+}
+
+.section-title {
+  text-align: center;
+  margin: 60px 0 30px;
+  font-size: 2rem;
+}
+
+/* ===== GRID ===== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  margin-bottom: 80px;
+}
+
+/* ===== CARD 3D ===== */
+.card {
+  width: 280px;
+  height: 380px;
+  perspective: 1000px;
+}
+
+.card img,
+.card .card-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.8s;
+}
+
+/* ===== FRONT ===== */
+.card img {
+  object-fit: cover;
+  border: 4px solid #eee;
+}
+
+/* ===== BACK ===== */
+.card .card-content {
+  background: #111;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 4px solid #eee;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.card-content span {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #9ae6e6;
+}
+
+/* ===== HOVER EFFECT ===== */
+.card:hover img {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card-content {
+  transform: rotateY(0deg);
+}
+
+/* ......../ media query /.......... */
+
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 2rem;
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+}
+
+.img-container:hover img {
+    transform: scale(1.15);
+    transition: 0.7s;
+}
+
+.img-container:hover .btn {
+    background: white;
+}
+
+
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+
+  .navbar .menu-items li {
+    font-size: 1.6rem;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    position: absolute;
+    top: 06px;
+    right: 15px;
+    font-size: 3rem;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+}
